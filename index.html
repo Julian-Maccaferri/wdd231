@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Maccaferri - WDD 231 - Web Frontend Development</title>
+    <meta name="author" content="Julian Maccaferri" />
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://rosarionoticias.gob.ar/library/timthumb/timthumb.php?src=/uploads/fotos/p1f4ucjnum4me5pm1mad186oond7.jpg&h=634&w=950&zc=1">
+    <meta property="og:title" content="Julian Maccaferri - WDD 231 - Web Frontend Development">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/logo.png" type="image/png">
+            <img src="images/logo.svg" alt="Profile picture of Julian Maccaferri" width="100" height="100"
+                loading="lazy">
+        </picture>
+        <p><span>Julian Maccaferri</span></p>
+    </header>
+    <nav>
+        <button id="navButton"></button>
+        <ul class="menuLinks">
+            <li class="active" title="home"><a href="index.html">Home</a></li>
+            <li title="chamber-home-page"><a href="chamber/index.html" title="chamber">Chamber Project</a></li>
+            <li title="finalProject-home-page"><a href="chamber/index.html" title="finalProject">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <h1>Home</h1>
+        </div>
+        <div class="parent">
+            <section class="card">
+                <span>Learning Activities</span>
+            </section>
+
+            <section class="card">
+                <span>Information</span>
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon" width="50" height="50" loading="lazy">
+                    <figcaption></figcaption>
+                </figure>
+                <p id="visitCount"></p>
+            </section>
+        </div>
+
+    </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.31553185746!2d-60.669100424174275!3d-32.94267787168846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5bab14b36b%3A0x9766d72ba5f1c242!2sRioja%203153%2C%20S2002OJS%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1743703802591!5m2!1ses!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <footer>
+        <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburguerButton.js" defer></script>
+    <script src="scripts/visitCounter.js" defer></script>
+    <script src="scripts/localWeather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
+</body>
+
+</html>
