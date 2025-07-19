@@ -4,58 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Julian Maccaferri">
+    <title>Julian Maccaferri - WDD 231 - Web Frontend Development</title>
+    <meta name="author" content="Julian Maccaferri" />
     <meta name="description"
-        content="WDD 231 - Dynamic Web Fundamentals - Julian Maccaferri - Web Frontend Development I Website course">
-    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/">
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Julian Maccaferri - Web Frontend Development I Website">
+    <meta property="og:image"
+        content="https://rosarionoticias.gob.ar/library/timthumb/timthumb.php?src=/uploads/fotos/p1f4ucjnum4me5pm1mad186oond7.jpg&h=634&w=950&zc=1">
+    <meta property="og:title" content="Julian Maccaferri - WDD 231 - Web Frontend Development">
     <meta property="og:description"
-        content="This is Julian Maccaferri's website for Web Frontend Development I Course at BYU Idaho">
-    <meta property="og:image" content="images/profile.png">
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="Julian Maccaferri - Web Frontend Developmetn I Website">
-    <meta name="twitter:image:alt" content="Alt text for image">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <title>WDD 231 - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
     <header>
-        <img src="images/profile.png" alt="profile picture">
-        <h1>Julian Maccaferri</h1>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <picture>
+            <source srcset="images/logo.png" type="image/png">
+            <img src="images/logo.svg" alt="Profile picture of Julian Maccaferri" width="100" height="100"
+                loading="lazy">
+        </picture>
+        <p><span>Julian Maccaferri</span></p>
     </header>
     <nav>
-        <a href="index.hmtl" title="Home" class="active">Home</a>
-        <a href="#" title="Chamber" class="active">Chamber</a>
-        <a href="https://github.com/Julian-Maccaferri" title="Github" class="active">Github Profile</a>
-        <a href="https://www.linkedin.com/in/julianmaccaferri/?locale=en_US" title="LinkedIn"
-            class="active">LinkedIn</a>
+        <button id="navButton"></button>
+        <ul class="menuLinks">
+            <li class="active" title="home"><a href="index.html">Home</a></li>
+            <li title="chamber-home-page"><a href="chamber/index.html" title="chamber">Chamber Project</a></li>
+            <li title="finalProject-home-page"><a href="chamber/index.html" title="finalProject">Final Project</a></li>
+        </ul>
     </nav>
     <main>
-        <div class="cards">
+        <div class="hero">
+            <h1>Home</h1>
+        </div>
+        <div class="parent">
             <section class="card">
-                <h2>Course Work</h2>
-                <ol>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ol>
+                <span>About Me</span>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quam similique vitae, aperiam optio harum perspiciatis incidunt
+                nam dolorem itaque laudantium iure maxime veritatis a quis consectetur at eligendi magni? Veniam!</p>
             </section>
             <section class="card">
-                <h2>Rosario, Argentina</h2>
-                <img src="images/monumento.webp" alt="Monumento a la bandera, Rosario">
-                <figcaption>Monumento a la bandera, Rosario</figcaption>
+                <h2>Student photo</h2>
+                <img src="images/profile-pic.webp" alt="Profile picture of Julian Maccaferri" height="200" width="200" loading="lazy">
+                <figcaption>Profile picture of Julian Maccaferri</figcaption>
             </section>
         </div>
         <section class="certificate-section">
@@ -73,6 +77,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburguerButton.js" defer></script>
     <script src="scripts/courseList.js" defer></script>
     <script src="scripts/toggle.js" defer></script>
 </body>
