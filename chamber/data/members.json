@@ -1,0 +1,65 @@
+{
+    "company": [ {
+        "name": "Facebook",
+        "address": "1 Hacker Way, Menlo Park, CA 94025",
+        "phone": "(650) 543-4800",
+        "website": "https://www.facebook.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+        "alt": "Facebook Logo",
+        "subscription": "Gold"
+    },
+    {
+        "name": "Google",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "phone": "(650) 253-0000",
+        "website": "https://www.google.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/2/20/Google_2015_logo.svg",
+        "alt": "Google Logo",
+        "subscription": "Silver"
+    },
+    {
+        "name": "Amazon",
+        "address": "410 Terry Ave N, Seattle, WA 98109",
+        "phone": "(206) 266-1000",
+        "website": "https://www.amazon.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        "alt": "Amazon Logo",
+        "subscription": "Bronze"
+    },
+    {
+        "name": "Apple",
+        "address": "1 Apple Park Way, Cupertino, CA 95014",
+        "phone": "(408) 996-1010",
+        "website": "https://www.apple.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        "alt": "Apple Logo",
+        "subscription": "Gold"
+    },
+    {
+        "name": "Microsoft",
+        "address": "1 Microsoft Way, Redmond, WA 98052",
+        "phone": "(425) 882-8080",
+        "website": "https://www.microsoft.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+        "alt": "Microsoft Logo",
+        "subscription": "Silver"
+    },
+    {
+        "name": "Netflix",
+        "address": "100 Winchester Circle, Los Gatos, CA 95032",
+        "phone": "(408) 540-3700",
+        "website": "https://www.netflix.com",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+        "alt": "Netflix Logo",
+        "subscription": "Non-Profit"
+    },
+    {
+        "name": "Twitter",
+        "address": "1355 Market St #900, San Francisco, CA 94103",
+        "phone": "(415) 222-9670",
+        "website": "https://www.twitter.com",
+        "img": "https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_bird_logo_2012.svg",
+        "alt": "Twitter Logo",
+        "subscription": "Gold"
+    }]
+}

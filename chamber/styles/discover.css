@@ -1,0 +1,46 @@
+.content-container {
+    gap: 1rem;
+}
+
+aside {
+    background-color: #1470c0;
+    color: white;
+    padding: 1rem;
+    margin: 1rem 2vw;
+    border-radius: 10px;
+}
+
+.sidebar section {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.sidebar li {
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.image-gallery {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
