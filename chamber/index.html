@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosario Chamber of Commerce | Empowering Local Businesses | WDD231 - Julian Maccaferri</title>
+    <meta name="author" content="Julian Maccaferri" />
+    <meta name="description" content="Rosario Chamber of Commerce, empowering local businesses with resources,
+                                     networking, and growth opportunities." />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://unsplash.com/es/fotos/gente-sentada-al-lado-de-la-mesa-dentro-de-la-habitacion-hCb3lIB8L8E">
+    <meta property="og:title" content="Rosario Chamber of Commerce | Empowering Local Businesses">
+    <meta property="og:description" content="Discover the Rosario Chamber of Commerce, empowering local businesses with resources,
+                                            networking, and growth opportunities." />
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/Chamber/index.html">
+    <meta property="og:site_name" content="Rosario Chamber of Commerce">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/chamber-favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/chamber-favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/chamber-logo.png" type="image/png">
+            <img src="images/chamber-logo.webp" alt="Rosario chamber of commerce logo" width="80" height="80"
+                loading="lazy">
+        </picture>
+        <p>Rosario Chamber of Commerce</p>
+
+    </header>
+
+    <nav>
+        <button id="navButton"></button>
+        <ul class="menuLinks">
+            <li class="active" title="Home"><a href="index.html">Home</a></li>
+            <li title="directory"><a href="directory.html">Directory</a></li>
+            <li title="discover"><a href="discover.html">Discover</a></li>
+            <li title="join"><a href="join.html">JOIN</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Welcome to the Rosario Chamber of Commerce</h1>
+            <p>Empowering local businesses and fostering growth in Rosario.</p>
+            <picture>
+                <source srcset="images/chamber-hero-image.webp" type="image/webp">
+                <img src="images/chamber-hero-image.jpg" alt="Rosario Chamber of Commerce" width="1000" height="500"
+                    loading="lazy">
+            </picture>
+            <section class="cta">
+                <p>Become a part of a thriving business community and unlock exclusive benefits, networking
+                    opportunities,
+                    and resources to grow your business.</p>
+                <a href="join.html" class="cta-button">Join Today!</a>
+            </section>
+        </div>
+
+        <div id="banner" class="banner hidden">
+            <p>Join us for the Chamber of Commerce Meet and Greet on <strong>Wednesday at 7:00 PM</strong>!</p>
+            <button id="close-banner" aria-label="Close banner">❌</button>
+        </div>
+
+        <div class="information">
+            <section class="card">
+                <span>Current Events</span>
+                <h4>Upcoming Business Networking Event</h4>
+                <p>Join us on <strong>August 20, 2025</strong>, at the Rosario Convention Center for an exclusive networking event. 
+                   Meet local business leaders, share ideas, and explore opportunities for collaboration.</p>
+                <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+                <p><strong>Location:</strong> Rosario Convention Center, Main Hall</p>
+                   
+                <h4>Small Business Workshop</h4>
+                <p>Enhance your business skills with our free workshop on <strong>September 25, 2025</strong>. Topics include marketing strategies, 
+                   financial planning, and leveraging technology for growth.</p>
+                <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                <p><strong>Location:</strong> Chamber Office, Room 204</p>
+            </section>
+            
+
+            <section class="card">
+                <span>Weather</span>
+                <div id="weather">
+                    <p id="current-temp"></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="Weather icon" width="50" height="50" loading="lazy">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <p id="forecast"></p>
+                <p id="visitCount"></p>
+            </section>
+        </div>
+        <div class="advertisement">
+            <section class="card">
+                <span>Publicity agency</span>
+                <h4>Lorem ipsum dolum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </section>
+            <section class="card">
+                <span>Code with me!</span>
+                <h4>Lorem ipsum dolum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+            <section class="card">
+                <span>Box office</span>
+                <h4>Lorem ipsum dolum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+
+        </div>
+        <div class="spotlight">
+            <h2>Spotlight Members</h2>
+            <div id="spotlight-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
+        <p>WDD 231 - Web Frontend Development</p>
+        <p>Course assignment: Rosario Chamber of Commerce Web Page</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburguerButton.js" defer></script>
+    <script src="scripts/visitCounter.js" defer></script>
+    <script src="scripts/chamberWeather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+
+</body>
+
+</html>
