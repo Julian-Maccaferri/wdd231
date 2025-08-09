@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JOIN Rosario Chamber of Commerce | Empowering Local Businesses | WDD231 - Julian Maccaferri</title>
+    <meta name="author" content="Julian Maccaferri" />
+    <meta name="description" content="Join the Rosario Chamber of Commerce, empowering local businesses with resources,
+    networking, and growth opportunities."/>
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://unsplash.com/es/fotos/gente-sentada-al-lado-de-la-mesa-dentro-de-la-habitacion-hCb3lIB8L8E">
+    <meta property="og:title" content="Rosario Chamber of Commerce | Empowering Local Businesses">
+    <meta property="og:description" content="Discover the Rosario Chamber of Commerce, empowering local businesses with resources,
+    networking, and growth opportunities."/>
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/Chamber/index.html">
+    <meta property="og:site_name" content="Rosario Chamber of Commerce">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/chamber-favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/chamber-favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-larger.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/chamber-logo.png" type="image/png">
+            <img src="images/chamber-logo.webp" alt="Rosario chamber of commerce logo" width="80" height="80"
+                loading="lazy">
+        </picture>
+        <p>Rosario Chamber of Commerce</p>
+
+    </header>
+
+    <nav>
+        <button id="navButton"></button>
+        <ul class="menuLinks">
+            <li title="Home"><a href="index.html">Home</a></li>
+            <li title="directory"><a href="directory.html">Directory</a></li>
+            <li title="discover"><a href="">Discover</a></li>
+            <li class="active" title="join"><a href="join.html">JOIN</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Become a member</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>User Data:</legend>
+                <label>First Name*<input type="text" name="fname" id="firstName" required></label>
+                <label>Last Name*<input type="text" name="lname" id="lasttName" required></label>
+                <label>Phone*<input type="tel" name="phone" id="phone" required></label>
+                <label>Email <input type="email" name="email" id="email" placeholder="user@yourcompany.com"
+                        title="Please enter a valid email address" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Organization:</legend>
+                <label>Company / Bussines <input type="text" name="cName" id="companyName" required></label>
+                <label>Title<input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}"
+                        title="Only letters, hyphens, and spaces. Minimum 7 characters."></label>
+                <label>Bussines description<textarea name="description" id="bussinesDescription"></textarea></label>
+            </fieldset>
+
+            <fieldset id="membership">
+                <legend>Membership</legend>
+                <label><input type="radio" name="membership" value="non-profit">Non-Profits <span>Basic access to community events.</span></label>
+                <label><input type="radio" name="membership" value="bronze">Bronze <span>Event access + quarterly newsletter mention.</span></label>
+                <label><input type="radio" name="membership" value="silver">Silver <span>Bronze + homepage spotlight + 10% event discount.</span></label>
+                <label><input type="radio" name="membership" value="gold">Gold <span>All Silver benefits + free trainings and VIP invites.</span></label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber!"></input>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
+        <p>WDD 231 - Web Frontend Development</p>
+        <p>Course assignment: Rosario Chamber of Commerce Web Page</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburguerButton.js" defer></script>
+    <script src="scripts/timeStamp.js" defer></script>
+
+</body>
+
+</html>
