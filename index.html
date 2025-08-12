@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,8 @@
         <button id="navButton"></button>
         <ul class="menuLinks">
             <li class="active" title="home"><a href="index.html">Home</a></li>
-            <li title="chamber-home-page"><a href="chamber/index.html" title="chamber">Chamber Project</a></li>
+            <li title="chamber-directory-page"><a href="chamber/directory.html" title="directory">Chamber Directory</a>
+            </li>
             <li title="finalProject-home-page"><a href="chamber/index.html" title="finalProject">Final Project</a></li>
         </ul>
     </nav>
@@ -50,34 +51,38 @@
         </div>
         <div class="parent">
             <section class="card">
-                <span>Learning Activities</span>
+                <span>About Me</span>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam similique vitae, aperiam optio harum perspiciatis incidunt
+                    nam dolorem itaque laudantium iure maxime veritatis a quis consectetur at eligendi magni? Veniam!
+                </p>
             </section>
-
             <section class="card">
-                <span>Information</span>
-                <p id="current-temp"></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="Weather icon" width="50" height="50" loading="lazy">
-                    <figcaption></figcaption>
-                </figure>
-                <p id="visitCount"></p>
+                <h2>Student photo</h2>
+                <img src="images/profile-pic.webp" alt="Profile picture of Julian Maccaferri" height="200" width="200"
+                    loading="lazy">
+                <figcaption>Profile picture of Julian Maccaferri</figcaption>
             </section>
         </div>
-
+        <section class="certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+            <div id="courseContainer" class="courses"></div>
+        </section>
     </main>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.31553185746!2d-60.669100424174275!3d-32.94267787168846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab5bab14b36b%3A0x9766d72ba5f1c242!2sRioja%203153%2C%20S2002OJS%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1743703802591!5m2!1ses!2sar"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
     <footer>
-        <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
-        <p id="lastModified">Last Modification: </p>
+        <p>&copy;<span id="currentYear"></span> - Julian Maccaferri - Rosario Argentina</p>
+        <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburguerButton.js" defer></script>
-    <script src="scripts/visitCounter.js" defer></script>
-    <script src="scripts/localWeather.js" defer></script>
-    <script src="scripts/links.js" defer></script>
+    <script src="scripts/courseList.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
 </body>
 
 </html>

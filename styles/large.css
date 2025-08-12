@@ -19,4 +19,65 @@
     .parent section {
         box-shadow: 1px 1px 10px black;
     }
+<<<<<<< HEAD
+=======
+
+    .certificate-section {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+    .filter-buttons button {
+        background-color: #003366;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .filter-buttons button:hover {
+        background-color: #0055a5;
+    }
+
+    .certificate-section .filter-buttons button.active {
+        background-color: #002a3b;
+    }
+
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .course {
+        width: 150px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .course.completed {
+        background-color: #4CAF50;
+    }
+
+    .course.incomplete {
+        background-color: #8B4513;
+    }
+
+    .course h3 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    #courseContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+>>>>>>> 486cf85dd21d4470b8f53f66133b6187b587f950
 }

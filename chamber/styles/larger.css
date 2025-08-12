@@ -1,0 +1,34 @@
+@media only screen and (min-width: 37.5rem) {
+
+    #navButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .information {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .information section {
+        box-shadow: 1px 1px 10px black;
+    }
+
+    .advertisement {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    @media only screen and (min-width: 45rem) {
+        .list section {
+            display: flex;
+        }
+    }
+}
