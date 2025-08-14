@@ -1,0 +1,38 @@
+[
+    {
+        "id": "whey",
+        "name": "Whey Protein",
+        "price": 29.99,
+        "category": "Protein",
+        "image": "images/whey-protein.webp",
+        "description": "High-quality protein for muscle recovery.",
+        "brand": "Peak"
+    },
+    {
+        "id": "creatine",
+        "name": "Creatine Monohydrate",
+        "price": 19.99,
+        "category": "Performance",
+        "image": "images/creatine.webp",
+        "description": "Increase strength and power output.",
+        "brand": "Peak"
+    },
+    {
+        "id": "fish-oil",
+        "name": "Fish Oil",
+        "price": 15.99,
+        "category": "Health",
+        "image": "images/fish-oil.webp",
+        "description": "Supports heart, brain, and joint health.",
+        "brand": "Peak"
+    },
+    {
+        "id": "preworkout",
+        "name": "Preworkout",
+        "price": 24.99,
+        "category": "Energy",
+        "image": "images/preworkout.webp",
+        "description": "Boost energy and focus for your workouts.",
+        "brand": "Peak"
+    }
+]
