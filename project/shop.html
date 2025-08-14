@@ -26,27 +26,12 @@
         </ul>
     </nav>
     <main>
-        <h2>Shop Supplements</h2>
-        <div class="product-list">
-            <div class="product-card">
-                <img src="images/whey-protein.webp" alt="Whey Protein" width="150" height="150" loading="lazy">
-                <h4>Whey Protein</h4>
-                <p>High-quality protein for muscle recovery.</p>
-                <p><strong>$29.99</strong></p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="images/creatine.webp" alt="Creatine" width="150" height="150" loading="lazy">
-                <h4>Creatine Monohydrate</h4>
-                <p>Increase strength and power output.</p>
-                <p><strong>$19.99</strong></p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
+        <h2>Shop</h2>
+        <section id="productGrid" class="product-list" aria-live="polite"></section>
     </main>
     <footer>
-        <p>&copy;<span id="currentYear"></span> - Peak Performance - Rosario Argentina</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="currentYear"></span> • Peak Performance • Rosario, Argentina</p>
+        <p id="lastModified" aria-live="polite"></p>
     </footer>
 
     <div id="product-modal" class="modal" aria-modal="true" role="dialog" tabindex="-1">
@@ -59,6 +44,7 @@
     <script src="scripts/get_dates.js" defer></script>
     <script src="scripts/hamburguer_button.js" defer></script>
     <script src="scripts/toggle.js" defer></script>
+    <script src="scripts/render_products.js" defer></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 

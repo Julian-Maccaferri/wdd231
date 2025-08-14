@@ -1,38 +1,152 @@
 [
-    {
-        "id": "whey",
-        "name": "Whey Protein",
-        "price": 29.99,
-        "category": "Protein",
-        "image": "images/whey-protein.webp",
-        "description": "High-quality protein for muscle recovery.",
-        "brand": "Peak"
-    },
-    {
-        "id": "creatine",
-        "name": "Creatine Monohydrate",
-        "price": 19.99,
-        "category": "Performance",
-        "image": "images/creatine.webp",
-        "description": "Increase strength and power output.",
-        "brand": "Peak"
-    },
-    {
-        "id": "fish-oil",
-        "name": "Fish Oil",
-        "price": 15.99,
-        "category": "Health",
-        "image": "images/fish-oil.webp",
-        "description": "Supports heart, brain, and joint health.",
-        "brand": "Peak"
-    },
-    {
-        "id": "preworkout",
-        "name": "Preworkout",
-        "price": 24.99,
-        "category": "Energy",
-        "image": "images/preworkout.webp",
-        "description": "Boost energy and focus for your workouts.",
-        "brand": "Peak"
-    }
+  {
+    "id": 1,
+    "name": "Whey Protein Isolate",
+    "category": "Protein",
+    "price": 39.99,
+    "rating": 4.7,
+    "inStock": true,
+    "image": "images/whey-protein.webp",
+    "description": "High-purity whey isolate to support lean muscle and recovery."
+  },
+  {
+    "id": 2,
+    "name": "Whey Protein Concentrate",
+    "category": "Protein",
+    "price": 29.99,
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/whey-protein.webp",
+    "description": "Delicious whey concentrate with balanced macros for daily protein."
+  },
+  {
+    "id": 3,
+    "name": "Creatine Monohydrate",
+    "category": "Creatine",
+    "price": 19.99,
+    "rating": 4.8,
+    "inStock": true,
+    "image": "images/creatine.webp",
+    "description": "Clinically backed creatine for strength and power output."
+  },
+  {
+    "id": 4,
+    "name": "Micronized Creatine",
+    "category": "Creatine",
+    "price": 21.99,
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/creatine.webp",
+    "description": "Ultra-fine creatine powder for better mixability."
+  },
+  {
+    "id": 5,
+    "name": "Fish Oil 1000 mg",
+    "category": "Omega-3",
+    "price": 14.99,
+    "rating": 4.4,
+    "inStock": true,
+    "image": "images/fish-oil.webp",
+    "description": "EPA/DHA support for heart, brain, and joint health."
+  },
+  {
+    "id": 6,
+    "name": "Omega-3 Triple Strength",
+    "category": "Omega-3",
+    "price": 24.99,
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/fish-oil.webp",
+    "description": "High-potency omega-3s with enteric coating."
+  },
+  {
+    "id": 7,
+    "name": "Pre-Workout Citrus",
+    "category": "Pre-Workout",
+    "price": 29.99,
+    "rating": 4.2,
+    "inStock": true,
+    "image": "images/preworkout.webp",
+    "description": "Energy, focus, and pumps with a refreshing citrus flavor."
+  },
+  {
+    "id": 8,
+    "name": "Pre-Workout Berry",
+    "category": "Pre-Workout",
+    "price": 29.99,
+    "rating": 4.3,
+    "inStock": false,
+    "image": "images/preworkout.webp",
+    "description": "Smooth energy and endurance with a berry twist."
+  },
+  {
+    "id": 9,
+    "name": "Magnesium Glycinate",
+    "category": "Minerals",
+    "price": 16.99,
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/magnesium.webp",
+    "description": "Gentle magnesium for relaxation and sleep support."
+  },
+  {
+    "id": 10,
+    "name": "Calcium Citrate",
+    "category": "Minerals",
+    "price": 15.49,
+    "rating": 4.1,
+    "inStock": true,
+    "image": "images/calcium.webp",
+    "description": "Highly absorbable calcium for bones and teeth."
+  },
+  {
+    "id": 11,
+    "name": "Multivitamin Men",
+    "category": "Vitamins",
+    "price": 18.99,
+    "rating": 4.0,
+    "inStock": true,
+    "image": "images/magnesium.webp",
+    "description": "Daily essential vitamins formulated for men."
+  },
+  {
+    "id": 12,
+    "name": "Multivitamin Women",
+    "category": "Vitamins",
+    "price": 18.99,
+    "rating": 4.2,
+    "inStock": true,
+    "image": "images/magnesium.webp",
+    "description": "Daily essential vitamins formulated for women."
+  },
+  {
+    "id": 13,
+    "name": "BCAA 2:1:1",
+    "category": "Amino Acids",
+    "price": 22.99,
+    "rating": 4.3,
+    "inStock": true,
+    "image": "images/preworkout.webp",
+    "description": "Leucine, isoleucine, valine to support recovery."
+  },
+  {
+    "id": 14,
+    "name": "Vitamin D3 5000 IU",
+    "category": "Vitamins",
+    "price": 12.99,
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/calcium.webp",
+    "description": "Supports immunity and bone health."
+  },
+  {
+    "id": 15,
+    "name": "Shaker Bottle 700ml",
+    "category": "Accessories",
+    "price": 9.99,
+    "rating": 4.7,
+    "inStock": true,
+    "image": "images/shaker.webp",
+    "description": "Leak-proof shaker with blending ball."
+  }
 ]
