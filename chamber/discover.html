@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosario Chamber of Commerce | Julian Maccaferri</title>
+    <meta name="author" content="Julian Maccaferri" />
+    <meta name="description" content="Rosario Chamber of Commerce WebPage" />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://unsplash.com/es/fotos/gente-sentada-al-lado-de-la-mesa-dentro-de-la-habitacion-hCb3lIB8L8E">
+    <meta property="og:title" content="Chamber of Commerce - Rosario">
+    <meta property="og:description" content="Rosario Chamber of Commerce WebPage" />
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd230/Chamber/index.html">
+    <meta property="og:site_name" content="Rosario Chamber of Commerce">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/chamber-favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/chamber-favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/chamber-logo.png" type="image/png">
+            <img src="images/chamber-logo.webp" alt="Rosario chamber of commerce logo" width="100" height="100"
+                loading="lazy">
+        </picture>
+        <p>Rosario Chamber of Commerce</p>
+
+    </header>
+
+    <nav>
+        <button id="navButton"></button>
+        <ul class="menuLinks">
+            <li class="active" title="Home"><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Members</a></li>
+            <li title="site-plan"><a href="#">Site plan</a></li>
+            <li><a href="join.html">JOIN</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-container">
+            <aside class="sidebar">
+                <section>
+                    <h2>Last News</h2>
+                    <p>
+                        <strong>New Member Spotlight:</strong> Welcome to our newest member, <em>ABC Corp</em>! We are
+                        excited to have you on board.
+                    </p>
+                </section>
+                <section>
+                    <h2>Welcome Back!</h2>
+                    <p id="visitMessage"></p>
+                </section>
+                <section>
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li><strong>August 20:</strong> Business Networking Night</li>
+                        <li><strong>August 25:</strong> Workshop: Marketing Strategies</li>
+                        <li><strong>August 30:</strong> Annual Member Meeting</li>
+                    </ul>
+                </section>
+            </aside>
+            <section class="main-content">
+                <h1>Checkout our latest pictures!</h1>
+                <div class="image-gallery">
+                    <img src="images/chamber-1.webp" alt="chamber of commerce picture 1" width="300" height="200"
+                        loading="lazy">
+                    <img src="images/chamber-2.webp" alt="chamber of commerce picture 2" width="300" height="200"
+                        loading="lazy">
+                    <img src="images/chamber-3.webp" alt="chamber of commerce picture 3" width="300" height="200"
+                        loading="lazy">
+                    <img src="images/chamber-4.webp" alt="chamber of commerce picture 4" width="300" height="200"
+                        loading="lazy">
+                    <img src="images/chamber-5.webp" alt="chamber of commerce picture 5" width="300" height="200"
+                        loading="lazy">
+                    <img src="images/chamber-6.webp" alt="chamber of commerce picture 6" width="300" height="200"
+                        loading="lazy">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
+        <p>WDD 231 - Web Frontend Development</p>
+        <p>Course assignment: Rosario Chamber of Commerce Web Page</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburguerButton.js" defer></script>
+    <script src="scripts/visitMessage.js" defer></script>
+
+</body>
+
+</html>

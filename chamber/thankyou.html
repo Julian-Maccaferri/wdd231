@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosario Chamber of Commerce | Julian Maccaferri</title>
     <meta name="author" content="Julian Maccaferri" />
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="../styles/form-small.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -31,7 +31,7 @@
     <header>
         <picture>
             <source srcset="images/chamber-logo.png" type="image/png">
-            <img src="images/chamber-logo.webp" alt="Rosario chamber of commerce logo" width="80" height="80"
+            <img src="images/chamber-logo.webp" alt="Rosario chamber of commerce logo" width="100" height="100"
                 loading="lazy">
         </picture>
         <p>Rosario Chamber of Commerce</p>
@@ -42,9 +42,12 @@
         <button id="navButton"></button>
         <ul class="menuLinks">
             <li class="active" title="Home"><a href="index.html">Home</a></li>
-            <li title="directory"><a href="directory.html">Directory</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
             <li title="discover"><a href="discover.html">Discover</a></li>
-            <li title="join"><a href="join.html">JOIN</a></li>
+            <li title="site-plan"><a href="week01/chamber-site-plan.html">Site plan</a></li>
+            <li><a href="#">JOIN</a></li>
         </ul>
     </nav>
 
@@ -59,8 +62,8 @@
         <p>&copy;Julian Maccaferri - Rosario, Argentina</p>
         <p id="lastModified">Last Modification: </p>
     </footer>
-    <script src="scripts/getDates.js" defer></script>
-    <script src="scripts/hamburguerButton.js" defer></script>
+    <script src="../scripts/getDates.js" defer></script>
+    <script src="../scripts/hamburguerButton.js" defer></script>
 
 </body>
 </html> 
