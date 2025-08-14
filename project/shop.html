@@ -42,16 +42,24 @@
                 <p><strong>$19.99</strong></p>
                 <button>Add to Cart</button>
             </div>
-            <!-- Add more products as needed -->
         </div>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> - Peak Performance - Rosario Argentina</p>
         <p id="lastModified"></p>
     </footer>
+
+    <div id="product-modal" class="modal" aria-modal="true" role="dialog" tabindex="-1">
+        <div class="modal-content">
+            <button id="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
     <script src="scripts/get_dates.js" defer></script>
     <script src="scripts/hamburguer_button.js" defer></script>
     <script src="scripts/toggle.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>
