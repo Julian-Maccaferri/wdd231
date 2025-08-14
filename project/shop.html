@@ -27,7 +27,9 @@
     </nav>
     <main>
         <h2>Shop</h2>
-        <section id="productGrid" class="product-list" aria-live="polite"></section>
+        <section id="productGrid" class="product-list" role="list" aria-live="polite" data-state="loading">
+            <p>Loading products…</p>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> • Peak Performance • Rosario, Argentina</p>
