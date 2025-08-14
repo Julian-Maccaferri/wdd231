@@ -84,3 +84,31 @@ section ul {
 section ul a {
     padding: 0 2.5px;
 }
+
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.primary {
+    color: #F3F3F3;
+    background-color: #0077b6;
+}
+
+.secondary {
+    color: #0077b6;
+    background-color: #F3F3F3;
+}
+
+.accent1 {
+    color: #F3F3F3;
+    background-color: #03045e;
+}
+
+.accent2 {
+    color: #F3F3F3;
+    background-color: #00b4d8;
+}
