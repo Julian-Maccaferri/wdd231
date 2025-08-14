@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Maccaferri - WDD 231 - Web Frontend Development</title>
+    <meta name="author" content="Julian Maccaferri" />
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://rosarionoticias.gob.ar/library/timthumb/timthumb.php?src=/uploads/fotos/p1f4ucjnum4me5pm1mad186oond7.jpg&h=634&w=950&zc=1">
+    <meta property="og:title" content="Julian Maccaferri - WDD 231 - Web Frontend Development">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development. Julian Maccaferri. Course assignment course" />
+    <meta property="og:url" content="https://julian-maccaferri.github.io/wdd231/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-larger.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/logo.png" type="image/png">
+            <img src="images/logo.png" alt="Peak Performance Logo" width="100" height="100" loading="lazy">
+        </picture>
+        <h1>Peak Performance</h1>
+        <p>Your Online Supplements Shop for Sport Performance</p>
+    </header>
+    <nav>
+        <button id="navButton" aria-label="Open navigation menu">&#9776;</button>
+        <ul class="menuLinks">
+            <li title="home"><a href="index.html">Home</a></li>
+            <li title="shop"><a href="shop.html" title="shop-page">Shop</a></li>
+            <li class="active" title="contact"><a href="contact.html" title="contact-page">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact Us!</h1>
+    <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>User Data:</legend>
+            <label>First Name*<input type="text" name="fname" id="firstName" required></label>
+            <label>Last Name*<input type="text" name="lname" id="lasttName" required></label>
+            <label>Phone*<input type="tel" name="phone" id="phone" required></label>
+            <label>Email <input type="email" name="email" id="email" placeholder="user@yourcompany.com"
+                    title="Please enter a valid email address" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Organization:</legend>
+            <label>Company / Bussines <input type="text" name="cName" id="companyName" required></label>
+            <label>Title<input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}"
+                    title="Only letters, hyphens, and spaces. Minimum 7 characters."></label>
+            <label>Bussines description<textarea name="description" id="bussinesDescription"></textarea></label>
+        </fieldset>
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Contact us!"></input>
+    </form>

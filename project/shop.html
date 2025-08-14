@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Peak Performance</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Peak Performance Logo" width="100" height="100" loading="lazy">
+        <h1>Peak Performance</h1>
+        <p>Your Online Supplements Shop for Sport Performance</p>
+    </header>
+    <nav>
+        <button id="navButton" aria-label="Open navigation menu">&#9776;</button>
+        <ul class="menuLinks">
+            <li title="home"><a href="index.html">Home</a></li>
+            <li class="active" title="shop"><a href="shop.html" title="shop-page">Shop</a></li>
+            <li title="contact"><a href="contact.html" title="contact-page">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Shop Supplements</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="images/whey-protein.jpg" alt="Whey Protein" width="150" height="150" loading="lazy">
+                <h4>Whey Protein</h4>
+                <p>High-quality protein for muscle recovery.</p>
+                <p><strong>$29.99</strong></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/creatine.jpg" alt="Creatine" width="150" height="150" loading="lazy">
+                <h4>Creatine Monohydrate</h4>
+                <p>Increase strength and power output.</p>
+                <p><strong>$19.99</strong></p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Peak Performance - Rosario Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/get_dates.js" defer></script>
+    <script src="scripts/hamburguer_button.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
+</body>
+
+</html>

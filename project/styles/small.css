@@ -39,10 +39,18 @@ ul {
 /* CSS for the mobile menu */
 ul.menuLinks {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1470c0;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    /* Adjust if your header is taller */
+    z-index: 9;
 }
 
 ul.menuLinks.open {
-    display: block;
+    display: flex;
 }
 
 nav a {
@@ -61,54 +69,198 @@ nav .active {
     background-color: rgba(0, 0, 0, 0.3)
 }
 
+/* Hamburger menu button */
+#navButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+}
+
 main {
-    text-align: center;
-    max-width: 90%;
-    margin: auto;
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    position: relative;
+.hero {
+    display: grid;
+    place-items: center;
+    min-height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-h1 {
-    margin: 1rem 0;
-}
-
-section ul {
-    display: flex;
-}
-
-section ul a {
-    padding: 0 2.5px;
-}
-
-.colors {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     padding: 1rem;
 }
 
-.primary {
-    color: #F3F3F3;
-    background-color: #0077b6;
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.secondary {
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    margin: 0.5rem 0 0.25rem 0;
     color: #0077b6;
-    background-color: #F3F3F3;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-.accent1 {
-    color: #F3F3F3;
-    background-color: #03045e;
+.product-card p {
+    margin: 0.25rem 0 1rem 0;
+    color: #333;
+    font-size: 1rem;
 }
 
-.accent2 {
-    color: #F3F3F3;
+.product-card button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: auto;
+}
+
+.product-card button:hover {
     background-color: #00b4d8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1.5rem;
+    align-content: start;
+}
+
+@media (max-width: 400px) {
+    .product-card {
+        width: 95vw;
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 }
